@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28-ene-2019 13:30:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate_fabrica.Fabrica" table="fabrica" catalog="fabrica" optimistic-lock="version">
+        <id name="idFabrica" type="int">
+            <column name="Id_fabrica" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="50" not-null="true" />
+        </property>
+        <property name="coche" type="string">
+            <column name="coche" length="50" not-null="true" />
+        </property>
+        <property name="trabajador" type="string">
+            <column name="trabajador" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

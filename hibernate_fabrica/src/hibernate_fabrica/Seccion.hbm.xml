@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28-ene-2019 13:30:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate_fabrica.Seccion" table="seccion" catalog="fabrica" optimistic-lock="version">
+        <id name="idSeccion" type="java.lang.Integer">
+            <column name="id_seccion" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="11" not-null="true" />
+        </property>
+        <property name="NTrabajadores" type="int">
+            <column name="N_trabajadores" not-null="true" />
+        </property>
+        <property name="trabajador" type="string">
+            <column name="Trabajador" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
