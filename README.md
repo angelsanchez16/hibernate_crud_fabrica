@@ -1,0 +1,1 @@
+# hibernate_crud_fabrica
